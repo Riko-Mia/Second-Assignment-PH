@@ -101,6 +101,36 @@ nav ul{
     padding: 18px 0;
 }
 
+/* Store section start  */
+.store{
+    width: 100%;
+    display: flex;
+    margin: 133px 0;
+    
+}
+.store h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.store-img{
+    width: 50%;
+}
+.store-img img{
+    width: 100%;
+}
+
+.store-text{
+    width: 50%;
+    padding: 0px 0px 00px 80px;
+}
+.store-text ul li{
+    font-size: 22px;
+    color:rgba(0, 0, 0, 0.5);
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
 /* Deal section style start  */
 .deal-img{
     /* width: 100%; */
@@ -206,10 +236,12 @@ nav ul{
 .footer{
     max-height: 350px;
     /* display: flex; */
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    gap: 55px;
+    gap: 55px; */
+    display: flex;
+    justify-content: space-between;
     color: gray;
     margin-bottom: 50px;
 }
@@ -223,6 +255,10 @@ nav ul{
     text-align: left !important;
     width: 360px;
 }
+.footer-img p{
+    font-size: 22px;
+}
+
 .footer-logo {
     padding-bottom: 16px;
     width: 100%;
@@ -256,6 +292,34 @@ nav ul{
     grid-template-columns: repeat(2, 1fr);
 }
 
+.text h1, span{
+    font-size: 24px;
+}
+.text p{
+    font-size: 14px;
+}
+.text{
+    margin: 30px 0;
+}
+/* .text-center{
+    font-size: 24px;
+} */
+
+.plants-section p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 0px;
+    margin-bottom: 50px;
+}
+
+.plants-section h1{
+    font-size: 24px;
+}
+
+.cart-section div p, h4, button{
+    font-size: 16px;
+}
+
 .nav-ul ul{
     display: none;
 }
@@ -264,8 +328,45 @@ nav ul{
     
 }
 
+.news-latter{
+    width: 100%;
+    max-height: 392px;
+    background-image: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 392px;
+    margin:  0 auto;
+}
+
+.text-content h1{
+    font-size: 20px;
+}
+.news-latter input{
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    border: none;
+}
+
+.subscribe-btn{
+    width: auto;
+    padding: 20px 12px;
+
+}
+
 .footer{
     display: block;
+    font-size: 14px !important;
+}
+.container{
+    padding: 0px 20px;
 }
 
 }
