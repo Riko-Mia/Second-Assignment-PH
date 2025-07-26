@@ -279,9 +279,6 @@ nav ul{
 
 @media screen and (max-width: 576px){
 
-    body{
-        /* padding: 10px; */
-    }
     .hero-section{
     grid-template-columns: repeat(1, 1fr);
     display: flex;
@@ -324,9 +321,6 @@ nav ul{
     display: none;
 }
 
-.deal-img{
-    
-}
 
 .news-latter{
     width: 100%;
