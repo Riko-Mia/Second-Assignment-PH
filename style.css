@@ -38,7 +38,18 @@ nav ul{
         gap: 48px;
 }
 .nav-cart{
-    margin-left:48px
+    margin-left:48px;
+    /* width:'30px'; */
+    display: flex;
+    align-items: center;
+    /* height: 30px; */
+
+}
+.nav-cart a img{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+
 }
 
 
@@ -106,7 +117,18 @@ nav ul{
     width: 100%;
     display: flex;
     margin: 133px 0;
-    
+   
+}
+.trusted-badge img{
+    /* width: 286px; */
+}
+
+.trusted-badge{
+    width: 286px;
+    position: absolute;
+    top: -130px;
+    right: -120px;
+
 }
 .store h1{
     font-size: 60px;
@@ -114,6 +136,7 @@ nav ul{
 }
 .store-img{
     width: 50%;
+        position: relative;
 }
 .store-img img{
     width: 100%;
@@ -132,60 +155,51 @@ nav ul{
 
 
 /* Deal section style start  */
+
+
 .deal-img{
-    /* width: 100%; */
     /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     gap: 20px;
-    max-width: 1140px; 
     margin: 0 auto;
-    background-color: aqua;
-}
-
-.item3{
-  grid-column: 2 / 3; 
-    grid-row: 1 / 3;
-    /* grid-row: span  */
+    max-height: 424px;
+    margin: 100px 0;
 
 }
-.item2{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-
-}
-.item1{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-
-}
-
-
-.deal-cart{
+.item{
     border-radius: 10px;
-    overflow: hidden; 
-    position: relative;
-    background-color: blue;
-
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center;
-    /* color: white; 
-    text-align: center;
-    background-size: cover;
-    background-position: center; */
-
+    overflow: hidden;
+    color: #ffffff;
 }
-.deal-cart img{
+
+.item-1{
+    background-image: url(./assets/deal-bloom.png);
+    background-repeat: no-repeat;
     width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
-    /* position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: 1; */
+    height: 200px;
+    background-size: cover;
+    text-align: center;
 }
+.item-2{
+    background-image: url(./assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    text-align: center;
+
+}
+.item-3{
+    background-image: url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    text-align: center;
+}
+
 
 
 /* News Letter Section Start  */
@@ -279,6 +293,13 @@ nav ul{
 
 @media screen and (max-width: 576px){
 
+    .nav-cart span {
+        font-size: 15px;
+    }
+    .nav-cart a img {
+        width: 20px;
+        height: 20px;
+    }
     .hero-section{
     grid-template-columns: repeat(1, 1fr);
     display: flex;
@@ -317,30 +338,65 @@ nav ul{
     font-size: 16px;
 }
 
+
 .nav-ul ul{
     display: none;
 }
 
 
+/* Store section  */
+
+.store{
+    display: block;
+    margin: 50px 0;
+}
+.store-img{
+    width: 100%;
+}
+.store-text h1{
+    font-size: 24px;
+    margin: 18px 0; 
+}
+.store-text ul li{
+    font-size: 14px; 
+}
+.store-text{
+    width: 100%;
+    padding: 0px;
+}
+.news-text{
+    justify-content: center;
+}
+
+.news-latter .text-content{
+    padding: 60px 0;
+}
+
+.trusted-badge{
+    display: none;
+}
+
+
+
 .news-latter{
     width: 100%;
-    max-height: 392px;
+    max-height: 271px;
     background-image: url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 .bg{
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    height: 392px;
+    height: 271px;
     margin:  0 auto;
 }
 
 .text-content h1{
-    font-size: 20px;
+    font-size: 24px;
 }
 .news-latter input{
     width: 50%;
@@ -349,18 +405,33 @@ nav ul{
     border: none;
 }
 
+.text-content div{
+    display: flex;
+}
 .subscribe-btn{
     width: auto;
     padding: 20px 12px;
 
 }
 
+
+
 .footer{
     display: block;
     font-size: 14px !important;
 }
+
+.footer footer-img p{
+    font-size: 16px !important;
+}
 .container{
     padding: 0px 20px;
+}
+.socil-icons{
+    padding-bottom: 50px;
+}
+.footer ul li a{
+    font-size: 16px;
 }
 
 }
